@@ -386,6 +386,21 @@ git log --no-merges
 <br>
 A remote repo is an online copy of your project that lets you collaborate with others, back up your code, and share it.
 
+# Here the steps(command) line by line to push new file or folder from local to remote repo:
+
+```bash
+
+git init 
+
+git add .
+
+git commit -m "some message"
+
+git remote add origin <url> (of remote repository)
+
+git push -u origin main
+
+```
 # Some Common Git Remote Commands :
 
 ```bash
