@@ -47,6 +47,8 @@ Coding collaboration.
 
 # some Common git commands:
 
+<b>1. How to initialize </b>
+
 ```bash
 
 git init  
@@ -56,12 +58,16 @@ Initialize a new Git repository.
 <br>
 It creates a <b>.git</b> folder in your project folder .it starts track changes in code from here.
 
+<b>2. How to clone a repo</b>
+
 ```bash
 
 git clone <url>  
 
 ```
 Clone a repository from GitHub Means makes a local copy of a remote project.
+
+<b>3. How to check status of file:</b>
 
 ```bash
 
@@ -78,9 +84,11 @@ Modified (changed but not committed)
 <br>
 Staged (ready to commit)
 
+<b>4. How to add file or folder </b>
+
 ```bash
 
-It is used for add a single file.
+//It is used for add a single file.
 
 git add <file>   
     
@@ -89,7 +97,9 @@ if you want to add all files :
 git add .
     
 ```
-Stage a file for commit.Tells Git which file(s) you want to include in the next commit.
+When file is add by using this command.After that the file is staged and ready for commit (means save all the changes)
+
+<b>5. How to commit the changes</b>
 
 ```bash
 
@@ -103,6 +113,24 @@ opening a separate text editor.Save your changes with a message.
 git commit:-
 <br>
 A git commit is a command in Git that captures a snapshot of the project's currently staged changes, creating a permanent record in the repository's history.
+
+<b>6. How to connect your local  git repo to remote repo(like github)</b>
+
+```bash
+
+git remote add origin <url>
+
+```
+Here,
+<br>
+git remote add  -> Add a new repository.
+<br>
+origin  -> The default name for the remote.
+<br>
+url  -> The URL of the remote repo (on GitHub, GitLab, etc.)
+
+
+<b>7. How to push a local repo to remote repo</b>
 
 ```bash
 
@@ -132,13 +160,14 @@ git push
 
 ```
 
+<b>8.To fetch the latest file from remote repo</b>
+
 ```bash
 
 git pull origin main 
 
 ```
-Pull changes from GitHub means Downloads changes from the remote main branch and merges them with your local code.
-
+<b>to check branch</b>
 
 ```bash
 
@@ -149,7 +178,7 @@ It shows current branch
 
 <br>
 
-To check commit is done or not by using this command :
+<b>To check commit is done or not by using this command :</b>
 
 ```bash
 
@@ -157,7 +186,7 @@ git log
 
 ```
 
-To see what has changed in your code before committing it by  using :
+<b>To see what has changed in your code before committing it by  using :</b>
 
 ```bash
 
@@ -165,15 +194,19 @@ git diff   //it tells what difference between older version of code or new versi
 
 ```
 
-To check old files by using this:
+<b>To check old files by using this:</b>
 
 ```bash
 
 git show  id:fileName
 
+Example:
+
+git show  e9f4d6dabe91548277ae655721403dd261dd10d7 :README.md
+
 ```
 
-Get old version of code by using <b>git checkout</b> command. 
+<b>Get old version of code by using <b>git checkout</b> command. </b>
 
 ```bash
 
@@ -181,7 +214,7 @@ git checkout
 
 ```
 
-Common uses of git checkout command :
+<b>Common uses of git checkout command :</b>
 
 1. Switch to another branch :
 
